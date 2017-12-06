@@ -1,16 +1,42 @@
 
-h1 {
+body {
     color: rgb(50, 50, 58);
-    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
-    color: rgb(50, 50, 58);
-    margin-left: 20px;
+    margin-left: 20%;
 }
 
 div#content {
-	width: 600px;
-    height: 400px;
+	width: 35%;
     text-align: justify;
+    float: left;
+    margin: 1%;
+}
+
+div#images {
+	width: 60%;
+    float: right;
+    margin: 1%;
+    text-align: center;
+}
+
+div#dessins {
+    position: relative;
+    display: table;
+	width: 95%;
+    margin: 1%;
+    text-align: center;
+}
+
+#images img {
+    width: 45%;
+}
+
+#dessins img {
+    width: 24%;
 }
