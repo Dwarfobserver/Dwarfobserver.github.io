@@ -1,19 +1,27 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <title>Sidney Congard Website</title>
 
-<meta charset="UTF-8">
-<title>Sidney Congard Portfolio</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
 </head>
+
 <body>
 
-<div id="content">
-    <h1>Sidney Congard Portfolio</h1>
-    <p>
-    Ce site a été créé le 5 décembre pour faire parcourir un portfolio à mon université.
-    </p>
+<div id="menu">
+    <div id="top_bar"></div>
+    <div class="not_clickable_link menu_link">À propos</div>
+    <a href="skills.html"><div class="clickable_link menu_link">Compétences</div></a>
+    <a href="portfolio.html"><div class="clickable_link menu_link">Portfolio</div></a>
+</div>
+
+<div id="portfolio">
+    
+    <h1>Mon portfolio</h1>
     <h2>Tentacle Slicers</h2>
     <p>
     Il y a un an, j'ai développé Tentacle Slicers en binôme, un jeu codé en C# sans moteur intégré : j'ai donc
@@ -99,4 +107,7 @@
 </div>
 
 </body>
+
+<script>init();</script>
+
 </html>

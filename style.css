@@ -1,35 +1,76 @@
 
 @font-face {
-    font-family: Lato;
+    font-family: Lato-Regular;
     src: url('resources/fonts/Lato-Regular.ttf'); 
+}
+@font-face {
+    font-family: Lato-Heavy;
+    src: url('resources/fonts/Lato-Heavy.ttf'); 
+}
+
+:root {
+    --black-color: rgb(50, 50, 58);
 }
 
 body {
-    color: rgb(50, 50, 58);
-    font-family: Lato;
+    color: var(--black-color);
+    font-family: Lato-Regular;
     font-size: 110%;
     text-align: justify;
 }
-icon {
-    font-size: 200%;
+.icon {
+    font-size: 150%;
 }
 h1 {
     text-align: center;
 }
 input, button, submit {
-    color: rgb(50, 50, 58);
+    color: var(--black-color);
     display: inline;
     border: none;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     font-size: 120%;
 }
-
 .padded {
     padding-left: 1em;
 }
 .invisible {
     visibility: hidden;
+}
+
+#menu {
+    display: block;
+    float: none;
+    clear: both;
+}
+#menu #top_bar {
+    width: 100%;
+    height : 10px;
+    background-color: var(--black-color);
+}
+#menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#menu .menu_link {
+    display: inline-block;
+    width: 320px;
+    height: 85px;
+    line-height: 65px;
+    margin-right: 1em;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    font-size: 180%;
+    font-family: Lato-Heavy;
+    color: rgb(255, 255, 255);
+}
+#menu .clickable_link {
+    background-color: var(--black-color);
+}
+#menu .not_clickable_link {
+    background-color: var(--black-color);
 }
 
 #skills {
