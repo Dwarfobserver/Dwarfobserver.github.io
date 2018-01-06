@@ -1,21 +1,81 @@
 
-body {
-    color: rgb(50, 50, 58);
+@font-face {
+    font-family: Lato;
+    src: url('resources/fonts/Lato-Regular.ttf'); 
 }
 
+body {
+    color: rgb(50, 50, 58);
+    font-family: Lato;
+    font-size: 110%;
+    text-align: justify;
+}
+icon {
+    font-size: 200%;
+}
 h1 {
     text-align: center;
 }
+input, button, submit {
+    color: rgb(50, 50, 58);
+    display: inline;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-size: 120%;
+}
 
-h2 {
-    margin-left: 20%;
+.padded {
+    padding-left: 1em;
+}
+.invisible {
+    visibility: hidden;
+}
+
+#skills {
+    display: block;
+    float: none;
+    clear: both;
+    width: 800px;
+}
+#skills div {
+    display: block;
+    float: none;
+    clear: both;
+}
+#skills h2 {
+    display: inline;
+    margin-left: 1em;
+}
+#skills li {
+    font-size: 120%;
+}
+
+#portfolio {
+    display: block;
+    float: none;
+    clear: both;
+    width: 800px;
+}
+#portfolio h2 {
+    display: block;
+    margin-left: 3em;
+}
+#portfolio p {
+    margin-left: 1em;
 }
 
 div#content {
+    display: block;
 	width: 35%;
     text-align: justify;
     float: left;
     margin: 1%;
+}
+
+#content .details {
+    display: inline;
+    margin-left: 1em;
 }
 
 div#images {
@@ -28,7 +88,7 @@ div#images {
 div#dessins {
     position: relative;
     display: table;
-	width: 95%;
+	width: 100%;
     margin: 1%;
     text-align: center;
 }

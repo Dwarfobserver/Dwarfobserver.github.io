@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Sidney Congard Website</title>
+
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
+
+</head>
+<body>
+
+<div id="menu">
+
+    
+
+</div>
+
+<div id="skills">
+
+    <h1>Mes compétences</h1>
+
+    <div>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star-half"></span>
+        <h2>C++ moderne</h2>
+    </div>
+    <button onclick="toggleVisibility('skills_1_text', 'skills_1_btn_1', 'skills_1_btn_2')" id="skills_1_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('skills_1_text', 'skills_1_btn_1', 'skills_1_btn_2')" class="hidden" id="skills_1_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <p class="padded hidden" id="skills_1_text">
+    J'apprécie beaucoup toutes les possibilités offertes par le langage C++, et je passe beaucoup de temps
+    à l'approfondir. J'ai lu les livres 'Effective C++' et 'Effective Modern C++' de Scott Meyers, et je
+    vérifie régulièrement plusieurs contenus touchant au C++ : CppCon, C++ Weekly, reddit/r/cpp, ...
+    Mon dépôt GitHub 'cpp-sandbox' liste mes expérimentations en C++ (certaines sont réutilisables).
+    </p>
+    
+    <div>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star-outline"></span>
+        <h2>Programmation concurrente</h2>
+    </div>
+    <button onclick="toggleVisibility('skills_2_text', 'skills_2_btn_1', 'skills_2_btn_2')" id="skills_2_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('skills_2_text', 'skills_2_btn_1', 'skills_2_btn_2')" class="hidden" id="skills_2_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <p class="padded hidden" id="skills_2_text">
+    Il s'agit d'un thème qui m'intéresse, notamment pour des raisons de performance. J'ai des notions en
+    Data-Oriented Design et j'ai déjà testé différents styles de programmation concurrente : organisation du
+    travail par tâches, pattern 'reactor' sur un unique thread, ou encore communication entre threads
+    spécialisés.
+    </p>
+
+    <div>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star-half"></span>
+        <span class="icon ion-ios-star-outline"></span>
+        <h2>Réseau</h2>
+    </div>
+    <button onclick="toggleVisibility('skills_3_text', 'skills_3_btn_1', 'skills_3_btn_2')" id="skills_3_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('skills_3_text', 'skills_3_btn_1', 'skills_3_btn_2')" class="hidden" id="skills_3_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <p class="padded hidden" id="skills_3_text">
+    J'expérimente les protocoles UDP et TCP dans un projet de jeu vidéo en cours (via Boost.Asio). J'ai lu
+    'Developement and Deployment of Multiplayer Online Games, Vol.1' qui traite des choix d'architecture, des
+    pratiques de sérialisation, de représentation des données et des mesures de sécurités envisageables pour
+    un jeu multijoueur.
+    </p>
+
+    <div>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star-half"></span>
+        <span class="icon ion-ios-star-outline"></span>
+        <h2>Game design</h2>
+    </div>
+    <button onclick="toggleVisibility('skills_4_text', 'skills_4_btn_1', 'skills_4_btn_2')" id="skills_4_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('skills_4_text', 'skills_4_btn_1', 'skills_4_btn_2')" class="hidden" id="skills_4_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <p class="padded hidden" id="skills_4_text">
+    J'ai lu plusieurs livres traitant de l'expérience de jeu (notamment 'The Art of Game Design'), et je suis
+    plusieurs sources d'information sur le game design : Game Developement Conferences, reddit/r/gamedesign,
+    Merlan Frit, ... J'ai également créé des niveaux sur des jeux avec éditeurs que j'ai partagé sur Internet
+    (Warcraft 3, Trackmania, Little Big Planet), et écrit un guide pour une classe de World of Warcraft,
+    approuvé sur le forum officiel. J'ai écrit et dessiné des univers destinés à être explorés (pour des jeux
+    de rôle notamment).
+    </p>
+
+    <div>
+        <span class="icon ion-ios-star"></span>
+        <span class="icon ion-ios-star-outline"></span>
+        <span class="icon ion-ios-star-outline"></span>
+        <h2>Programmation fonctionnelle</h2>
+    </div>
+    <button onclick="toggleVisibility('skills_5_text', 'skills_5_btn_1', 'skills_5_btn_2')" id="skills_5_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('skills_5_text', 'skills_5_btn_1', 'skills_5_btn_2')" class="hidden" id="skills_5_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <p class="padded hidden" id="skills_5_text">
+    J'ai appris la programmation en CPGE avec OCaml. J'ai aussi légèrement pratiqué F#, et appris plus tard
+    les bénéfices et certains patterns de langages fonctionnels, que j'ai pu tester et implémenter en partie
+    en C++.
+    </p>
+
+    <div>
+        <br/>
+        <!-- 3 icons for padding -->
+        <span class="invisible icon ion-ios-star"></span>
+        <span class="invisible icon ion-ios-star"></span>
+        <span class="invisible icon ion-ios-star"></span>
+        <h2>Autre</h2>
+    </div>
+    <ul>
+        <li>Algorithmes et structures de données</li>
+        <li>Programmation graphique (OpenGL 3+)</li>
+        <li>JavaScript ES6, NodeJS</li>
+        <li>Techniques de forage de données</li>
+        <li>Programmation orientée objet</li>
+    </ul>
+</div>
+
+<div id="portfolio">
+    
+    <h1>Mon portfolio</h1>
+    <h2>Tentacle Slicers</h2>
+    <p>
+    Il y a un an, j'ai développé Tentacle Slicers en binôme, un jeu codé en C# sans moteur intégré : j'ai donc
+    notemment créé l'architecture du moteur, les collisions (formes 2d simples et lignes de vue), le système
+    d'animations, l'analyseur de fichier pour créer des niveaux, l'intelligence articifielle (avec pathfinding)
+    et tous les assets graphiques du jeu (images, animations, effets, terrains).
+    </p>
+    <p>
+    Il s'agit d'un jeu jouable tout seul ou à deux (sur un même clavier) où il faut résister à des vagues
+    d'ennemis. Des powerups permettent d'améliorer les statistiques des héros des joueurs et de développer de
+    nouvelles compétences : projectiles puissants, en mouvement, invincibilité, sorts de contrôle, ...
+    </p>
+    <p>
+    <a href="https://github.com/Dwarfobserver/TentacleSlicers">Voici le code source du jeu (environ 8000 lignes
+    de code)</a>. GitHub n'a pas été utilisé pour son développement et ne sert ici qu'à héberger le projet final.
+    <a href="https://www.youtube.com/watch?v=v7-tyT7pgmQ">Un Youtuber a accepté de tester notre jeu :)</a>
+    </p>
+    <h2>Depuis l'UQAC</h2>
+    <p>
+    Peu de temps après mon arrivée à l'UQAC (en collocation), j'ai participé à une Game Jam au développement de
+    <a href=https://gamejolt.com/games/taerena/289095>T-Arena</a>. Il s'agit d'un jeu en 2D où deux joueurs
+    s'affrontent au tout par jour sur un terrain découpé en cases. Je me suis occupé des inputs, de l'algorithme
+    de sélection de case (avec le joystick ou au clavier) et j'ai créé la boucle de jeu principale.
+    </p>
+    <p>
+    Dans le cours de conception de jeu vidéo, je participe au développement de 'Car Crash Boom ! Yeah !!!', un jeu
+    de course en multijoueur local où deux équipes de deux joueurs s'affrontent (un pilote et un copilote). J'ai
+    notamment développé un système d'inputs générique, créé une carte jouable (sur une plage), et tente maintenant
+    de créer un système pour charger les différents circuits dynamiquement (et transporter les joueurs de l'un à
+    l'autre).
+    </p>
+    <p>
+    J'aborde également le jeu vidéo sous plusiuers aspects dans mes autres cours : en intelligence artificielle
+    pour le jeu vidéo, j'ai intégré un réseau de neurones à des IA sur
+    <a href=https://github.com/Dwarfobserver/Raven>Raven, un jeu de tir en vue de dessus</a>. En programmation
+    objet avancée, j'ai découvert le Javascript et tenté (en binôme) de créer
+    <a href=https://github.com/mathildell/jeuPOO>un éditeur de niveau</a>, qui produit un fichier JSON
+    interprétable par un moteur de jeu en ligne. Enfin, en forage de données, j'ai étudié (en trio) l'aglorithme
+    NEAT pour créer <a href=https://www.youtube.com/watch?v=qv6UVOQ0F44>un réseau de neurones qui apprend seul à
+    jouer à Super Mario Bros™</a> sur SNES (depuis un émulateur).
+    </p>
+    <h2>A propos de moi</h2>
+    <p>
+    Je suis Alsacien. J'y ai fais une classe préparatoire scientifique puis j'ai été admis à Polytech Marseille
+    pour une formation d'ingénieur informaticien. J'ai pris goût aux différents problèmes d'architecture et de
+    performance que je retrouve dans les moteurs de jeu vidéo, et je me suis intéressé aux différents aspects
+    artistiques impliqués dans la réalisation de jeu vidéo.
+    <p>
+    Actuellement, je cherche à développer mes capacités en programmation (surtout en C++ moderne) et ma
+    connaissance des moteurs de jeu. Je continue à me former aux autres aspects du jeu vidéo : je lis des ouvrages
+    portant sur le game design, je dessine dans l'optique de développer une meileure affinité artistique, et je
+    tente occasionnellement d'écrire pour développer des univers et des personnages profonds.
+    </p>
+    <p>
+    Voici <a href="http://sidney.congard.etu.perso.luminy.univ-amu.fr/index.html">mon ancien site (plus maintenu
+    depuis 2 ans)</a>, <a href="https://www.linkedin.com/in/sidney-congard-31081710b/">ma page LinkedIn</a> et
+    <a href="https://github.com/Dwarfobserver">ma page GitHub</a>. Celle-ci comprend notamment
+    <a href="https://github.com/Dwarfobserver/cpp-sandbox">un répertoire</a> où j'expérimente des thématiques en
+    C++ moderne (dont le multi-threading et les templates).
+    </p>
+</div>
+
+<div id="images">
+    <p><i>Menu principal et scène de combat de Tentacle Slicers</i></p>
+    <img src="resources/captures/ts-menu.png">
+    <img src="resources/captures/ts-boss.png">
+
+    <p><i>Voitures et scènes de Car Crash Boom !!! Yeah !</i></p>
+    <img src="resources/captures/cars.png">
+    <img src="resources/captures/beach.png">
+    
+    <p><i>Scène de T-Arena et zones de déplacement et d'attaque</i></p>
+    <img src="resources/captures/arena-map.png">
+    <img src="resources/captures/arena-ranges.png">
+</div>
+
+<div id="dessins">
+    <p><i>Quelques dessins :)</i></p>
+    <img src="resources/dessins/hestia.jpg">
+    <img src="resources/dessins/inktober.jpg">
+    <img src="resources/dessins/magie.jpg">
+    <img src="resources/dessins/risa.jpg">
+</div>
+
+</body>
+
+<script>init();</script>
+
+</html>
