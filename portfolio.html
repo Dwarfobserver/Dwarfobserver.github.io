@@ -14,74 +14,68 @@
 
 <div id="menu">
     <div id="top_bar"></div>
-    <a href="index.html"><div class="clickable_link menu_link">À propos</div></a>
+    <a href="index.html"><div class="clickable_link menu_link">Accueil</div></a>
     <a href="skills.html"><div class="clickable_link menu_link">Compétences</div></a>
-    <div class="not_clickable_link menu_link">Portfolio</div>
+    <div class="current_link menu_link">Portfolio</div>
+    <a href="about.html"><div class="clickable_link menu_link">À propos</div></a>
+    <a href="portfolio-en.html"><div class="language_link menu_link">In english please !</div></a>
 </div>
 
-<div id="portfolio">
+<div class="content" id="portfolio">
     
     <h1>Mon portfolio</h1>
     <h2>Tentacle Slicers</h2>
     <p>
-    Il y a un an, j'ai développé Tentacle Slicers en binôme, un jeu codé en C# sans moteur intégré : j'ai donc
-    notemment créé l'architecture du moteur, les collisions (formes 2d simples et lignes de vue), le système
-    d'animations, l'analyseur de fichier pour créer des niveaux, l'intelligence articifielle (avec pathfinding)
-    et tous les assets graphiques du jeu (images, animations, effets, terrains).
+    Il y a un an, j'ai développé Tentacle Slicers en binôme, un jeu 2D vu de dessus jouable tout seul ou à
+    deux (sur un même clavier) où il faut résister à des vagues d'ennemis. Des powerups permettent
+    d'améliorer les statistiques des héros des joueurs et de développer de nouvelles compétences :
+    projectiles puissants, utilisations en mouvement, invincibilité, sorts de contrôle, ...
     </p>
     <p>
-    Il s'agit d'un jeu jouable tout seul ou à deux (sur un même clavier) où il faut résister à des vagues
-    d'ennemis. Des powerups permettent d'améliorer les statistiques des héros des joueurs et de développer de
-    nouvelles compétences : projectiles puissants, en mouvement, invincibilité, sorts de contrôle, ...
+    Tentacle Slicers cumule plus de 8000 lignes de code en C#. Il ne se base sur aucun moteur de jeu : j'ai
+    donc notemment créé l'architecture du moteur, les collisions (formes 2d simples et lignes de vue), le
+    système d'animations, l'analyseur de fichier pour créer des niveaux, l'intelligence articifielle (avec
+    pathfinding) et tous les assets graphiques du jeu (images, animations, effets, terrains).
     </p>
     <p>
-    <a href="https://github.com/Dwarfobserver/TentacleSlicers">Voici le code source du jeu (environ 8000 lignes
-    de code)</a>. GitHub n'a pas été utilisé pour son développement et ne sert ici qu'à héberger le projet final.
+    <a href="https://github.com/Dwarfobserver/TentacleSlicers">Voici le code source du jeu</a>. GitHub n'a
+    pas été utilisé pour son développement et ne sert ici qu'à héberger le projet final.
     <a href="https://www.youtube.com/watch?v=v7-tyT7pgmQ">Un Youtuber a accepté de tester notre jeu :)</a>
     </p>
-    <h2>Depuis l'UQAC</h2>
+<!--
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" id="port_1_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" class="hidden" id="port_1_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_1_img">
+
+    </div>
+-->
+    <h2>Car Crash Boom !!! Yeah !</h2>
     <p>
-    Peu de temps après mon arrivée à l'UQAC (en collocation), j'ai participé à une Game Jam au développement de
-    <a href=https://gamejolt.com/games/taerena/289095>T-Arena</a>. Il s'agit d'un jeu en 2D où deux joueurs
-    s'affrontent au tout par jour sur un terrain découpé en cases. Je me suis occupé des inputs, de l'algorithme
-    de sélection de case (avec le joystick ou au clavier) et j'ai créé la boucle de jeu principale.
+    Dans le cours de conception de jeu vidéo, j'ai participé au développement de 'Car Crash Boom ! Yeah !!!',
+    un jeu de course en multijoueur local développé sur Unity où deux équipes de deux joueurs s'affrontent
+    (un pilote et un copilote). Trois phases de combat et deux de coopération s'alternent sur un circuit.
     </p>
     <p>
-    Dans le cours de conception de jeu vidéo, je participe au développement de 'Car Crash Boom ! Yeah !!!', un jeu
-    de course en multijoueur local où deux équipes de deux joueurs s'affrontent (un pilote et un copilote). J'ai
-    notamment développé un système d'inputs générique, créé une carte jouable (sur une plage), et tente maintenant
-    de créer un système pour charger les différents circuits dynamiquement (et transporter les joueurs de l'un à
-    l'autre).
+    J'ai notamment développé un système d'inputs générique et créé une carte jouable (sur une plage) de
+    combat. J'ai également recherché comment faire l'éclairage et la jonction entre les différentes scènes
+    d'un circuit.
     </p>
-    <p>
-    J'aborde également le jeu vidéo sous plusiuers aspects dans mes autres cours : en intelligence artificielle
-    pour le jeu vidéo, j'ai intégré un réseau de neurones à des IA sur
-    <a href=https://github.com/Dwarfobserver/Raven>Raven, un jeu de tir en vue de dessus</a>. En programmation
-    objet avancée, j'ai découvert le Javascript et tenté (en binôme) de créer
-    <a href=https://github.com/mathildell/jeuPOO>un éditeur de niveau</a>, qui produit un fichier JSON
-    interprétable par un moteur de jeu en ligne. Enfin, en forage de données, j'ai étudié (en trio) l'aglorithme
-    NEAT pour créer <a href=https://www.youtube.com/watch?v=qv6UVOQ0F44>un réseau de neurones qui apprend seul à
-    jouer à Super Mario Bros™</a> sur SNES (depuis un émulateur).
-    </p>
-    <h2>A propos de moi</h2>
-    <p>
-    Je suis Alsacien. J'y ai fais une classe préparatoire scientifique puis j'ai été admis à Polytech Marseille
-    pour une formation d'ingénieur informaticien. J'ai pris goût aux différents problèmes d'architecture et de
-    performance que je retrouve dans les moteurs de jeu vidéo, et je me suis intéressé aux différents aspects
-    artistiques impliqués dans la réalisation de jeu vidéo.
-    <p>
-    Actuellement, je cherche à développer mes capacités en programmation (surtout en C++ moderne) et ma
-    connaissance des moteurs de jeu. Je continue à me former aux autres aspects du jeu vidéo : je lis des ouvrages
-    portant sur le game design, je dessine dans l'optique de développer une meileure affinité artistique, et je
-    tente occasionnellement d'écrire pour développer des univers et des personnages profonds.
-    </p>
-    <p>
-    Voici <a href="http://sidney.congard.etu.perso.luminy.univ-amu.fr/index.html">mon ancien site (plus maintenu
-    depuis 2 ans)</a>, <a href="https://www.linkedin.com/in/sidney-congard-31081710b/">ma page LinkedIn</a> et
-    <a href="https://github.com/Dwarfobserver">ma page GitHub</a>. Celle-ci comprend notamment
-    <a href="https://github.com/Dwarfobserver/cpp-sandbox">un répertoire</a> où j'expérimente des thématiques en
-    C++ moderne (dont le multi-threading et les templates).
-    </p>
+<!--
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" id="port_2_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" class="hidden" id="port_2_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_2_img">
+
+    </div>
+-->
+    
 </div>
     
 </body>

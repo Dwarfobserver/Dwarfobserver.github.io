@@ -4,33 +4,50 @@
     src: url('resources/fonts/Lato-Regular.ttf'); 
 }
 @font-face {
+    font-family: Lato-Semibold;
+    src: url('resources/fonts/Lato-Semibold.ttf'); 
+}
+@font-face {
     font-family: Lato-Heavy;
     src: url('resources/fonts/Lato-Heavy.ttf'); 
 }
+@font-face {
+    font-family: Lato-Black;
+    src: url('resources/fonts/Lato-Black.ttf'); 
+}
+
 
 :root {
-    --black-color: rgb(50, 50, 58);
+    --watermelon: #ff6a5c;
+    --greenlight: #ccdfcb;
+    --black: #414141;
+    --cyandark: #056571;
 }
 
 body {
-    color: var(--black-color);
+    color: var(--black);
     font-family: Lato-Regular;
     font-size: 110%;
     text-align: justify;
 }
-.icon {
-    font-size: 150%;
-}
 h1 {
     text-align: center;
 }
-input, button, submit {
-    color: var(--black-color);
+button {
+    color: var(--watermelon);
+    background-color: white;
     display: inline;
     border: none;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
     font-size: 120%;
+}
+a {
+    color: var(--watermelon);
+    font-family: Lato-Semibold;
+    text-decoration: none;
+}
+.icon {
+    font-size: 150%;
 }
 .padded {
     padding-left: 1em;
@@ -38,16 +55,26 @@ input, button, submit {
 .invisible {
     visibility: hidden;
 }
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    min-width: 500px;
+    max-width: 1000px;
+}
 
 #menu {
     display: block;
     float: none;
     clear: both;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align:center;
 }
 #menu #top_bar {
     width: 100%;
-    height : 10px;
-    background-color: var(--black-color);
+    height: 1px;
 }
 #menu a {
     text-decoration: none;
@@ -55,30 +82,70 @@ input, button, submit {
 }
 #menu .menu_link {
     display: inline-block;
-    width: 320px;
-    height: 85px;
+    width: 200px;
+    height: 65px;
     line-height: 65px;
     margin-right: 1em;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
     text-align: center;
-    font-size: 180%;
+    font-size: 140%;
     font-family: Lato-Heavy;
-    color: rgb(255, 255, 255);
+    color: var(--watermelon);
+}
+#menu .current_link {
+    border: 4px solid var(--watermelon);
+    border-radius: 2px;
 }
 #menu .clickable_link {
-    background-color: var(--black-color);
+    border: 4px solid white;
 }
-#menu .not_clickable_link {
-    background-color: var(--black-color);
+#menu .language_link {
+    width: 300px;
+    color: var(--cyandark);
 }
 
-#skills {
-    display: block;
-    float: none;
-    clear: both;
-    width: 800px;
+#index {
+    text-align: center;
 }
+#index .pres-block {
+    display: inline-block;
+    text-align: justify;
+    margin: 2%;
+    width: 40%;
+    height: 40%;
+}
+#index .title {
+    display: block;
+    padding-left: 5%;
+    color: var(--greenlight);
+    font-family: Lato-Black;
+    font-size: 1000%;
+}
+#index #resume {
+    display: inline-block;
+    max-width: 400px;
+    font-size: 140%;
+    color: var(--black);
+    margin-left: 10%;
+}
+#index #contact {
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 5%;
+    line-height: 100%;
+}
+#index #email {
+    font-size: 160%;
+    line-height: 100%;
+}
+#index #github {
+    padding-left: 1em;
+    font-size: 200%;
+}
+#index #linkedin {
+    padding-left: 1em;
+    font-size: 210%;
+}
+
 #skills div {
     display: block;
     float: none;
@@ -92,30 +159,11 @@ input, button, submit {
     font-size: 120%;
 }
 
-#portfolio {
-    display: block;
-    float: none;
-    clear: both;
-    width: 800px;
-}
 #portfolio h2 {
     display: block;
     margin-left: 3em;
 }
 #portfolio p {
-    margin-left: 1em;
-}
-
-div#content {
-    display: block;
-	width: 35%;
-    text-align: justify;
-    float: left;
-    margin: 1%;
-}
-
-#content .details {
-    display: inline;
     margin-left: 1em;
 }
 

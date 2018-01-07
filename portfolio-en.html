@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sidney Congard Website</title>
+
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+
+<div id="menu">
+    <div id="top_bar"></div>
+    <a href="index-en.html"><div class="clickable_link menu_link">Welcome</div></a>
+    <a href="skills-en.html"><div class="clickable_link menu_link">Skills</div></a>
+    <div class="current_link menu_link">Portfolio</div>
+    <a href="about-en.html"><div class="clickable_link menu_link">About</div></a>
+    <a href="portfolio.html"><div class="language_link menu_link">En français s'il vous plaît !</div></a>
+</div>
+
+<div class="content" id="portfolio">
+    
+    <h1>My portfolio</h1>
+    <h2>Tentacle Slicers</h2>
+    <p>
+    One year ago, I created Tentacle Slicers in pair, a 2D top-down game playable alone or with a friend (on
+    the same keyboard) where you must survive against multiples ennemies. Powerups boost you character and
+    give him new abilities : powerful projectiles, attacking while moving, invincibiliy, disable ennemies,
+    ...
+    </p>
+    <p>
+    Tentacle Slicers has more than 8000 lines of code in C#. He is not based on any game engine. I created
+    the engine architecture and his systems : collisions (simple forms and lines of sight), animations and
+    artificial intelligence with pathfinding. I drawed all graphic assets of the game (images, maps, effects
+    and animations). I also developped I file parser to create levels.
+    </p>
+    <p>
+    <a href="https://github.com/Dwarfobserver/TentacleSlicers">Here is the game's source code</a>. GitHub
+    hasn't been used for his developpement and is only used to store the final project.
+    <a href="https://www.youtube.com/watch?v=v7-tyT7pgmQ">A Youtuber has accepted to test our game :)</a>
+    </p>
+<!--
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" id="port_1_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" class="hidden" id="port_1_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_1_img">
+
+    </div>
+-->
+    <h2>Car Crash Boom !!! Yeah !</h2>
+    <p>
+    I a school course about video game conception, I participated to the developpement of 'Car Crash Boom !
+    Yeah !!!', a local multiplayer racing game developped on Unity where duos are fighting each other to
+    finish first. We have three fighting races and two cooperation races for one final map.
+    </p>
+    <p>
+    In particular, I created a generic input system and a playable fighting race (on a beach). I also look
+    how to do the lightning and the link between differents races for a single map.
+    </p>
+<!--
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" id="port_2_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" class="hidden" id="port_2_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_2_img">
+
+    </div>
+-->
+    
+</div>
+    
+</body>
+
+<script>init();</script>
+
+</html>

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Sidney Congard Website</title>
@@ -14,22 +14,22 @@
 
 <div id="menu">
     <div id="top_bar"></div>
-    <a href="index.html"><div class="clickable_link menu_link">Accueil</div></a>
-    <div class="current_link menu_link">Compétences</div>
-    <a href="portfolio.html"><div class="clickable_link menu_link">Portfolio</div></a>
-    <a href="about.html"><div class="clickable_link menu_link">À propos</div></a>
-    <a href="skills-en.html"><div class="language_link menu_link">In english please !</div></a>
+    <a href="index-en.html"><div class="clickable_link menu_link">Welcome</div></a>
+    <div class="current_link menu_link">Skills</div>
+    <a href="portfolio-en.html"><div class="clickable_link menu_link">Portfolio</div></a>
+    <a href="about-en.html"><div class="clickable_link menu_link">About</div></a>
+    <a href="skills.html"><div class="language_link menu_link">En français s'il vous plaît !</div></a>
 </div>
 
 <div class="content" id="skills">
 
-    <h1>Mes compétences</h1>
+    <h1>My skills</h1>
 
     <div>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star-half"></span>
-        <h2>C++ moderne</h2>
+        <h2>Modern C++</h2>
     </div>
     <button onclick="toggleVisibility('skills_1_text', 'skills_1_btn_1', 'skills_1_btn_2')" id="skills_1_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -38,18 +38,18 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <p class="padded hidden" id="skills_1_text">
-    J'apprécie beaucoup toutes les possibilités offertes par le langage C++, et je passe beaucoup de temps
-    à l'approfondir. J'ai lu les livres 'Effective C++' et 'Effective Modern C++' de Scott Meyers, et je
-    vérifie régulièrement plusieurs contenus touchant au C++ : CppCon, C++ Weekly, reddit/r/cpp, ...
-    <a href="https://github.com/Dwarfobserver/cpp-sandbox">Mon dépôt GitHub 'cpp-sandbox'</a> liste mes
-    expérimentations en C++ (certaines sont réutilisables).
+    I like a lot possibilities offered by the C++ language, which I explore in a lot of my spare time. I
+    read 'Effective C++' and 'Effective Modern C++' Scott Meyers's books, and I check new content on a
+    regular basis : CppCon, C++ Weekly, reddit/r/cpp, ...
+    <a href="https://github.com/Dwarfobserver/cpp-sandbox">My repository GitHub 'cpp-sandbox'</a> store my
+    experiments in C++ (some of them are reusables).
     </p>
 
     <div>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star-outline"></span>
-        <h2>Programmation concurrente</h2>
+        <h2>Concurrent programming</h2>
     </div>
     <button onclick="toggleVisibility('skills_2_text', 'skills_2_btn_1', 'skills_2_btn_2')" id="skills_2_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -58,17 +58,16 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <p class="padded hidden" id="skills_2_text">
-    Il s'agit d'un thème qui m'intéresse, notamment pour des raisons de performance. J'ai des notions en
-    Data-Oriented Design et j'ai déjà testé différents styles de programmation concurrente : organisation du
-    travail par tâches, pattern 'reactor' sur un unique thread, ou encore communication entre threads
-    spécialisés.
+    It's a subject that interests me mainly for performance reasons. I have notions of Data-Oriented-Design
+    and I already tested different solutions for concurrent programming : tasks-based code, 'reactor' pattern
+    on a single thread, and communication between specialized threads.
     </p>
 
     <div>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star-half"></span>
         <span class="icon ion-ios-star-outline"></span>
-        <h2>Réseau</h2>
+        <h2>Networking</h2>
     </div>
     <button onclick="toggleVisibility('skills_3_text', 'skills_3_btn_1', 'skills_3_btn_2')" id="skills_3_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -77,10 +76,9 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <p class="padded hidden" id="skills_3_text">
-    J'ai expérimenté les protocoless UDP et TCP dans un projet de jeu vidéo (via Boost.Asio). J'ai lu
-    'Developement and Deployment of Multiplayer Online Games, Vol.1' qui traite des choix d'architecture, des
-    pratiques de sérialisation, de représentation des données et des mesures de sécurités envisageables pour
-    un jeu multijoueur.
+    I experimented UDP and TCP protocols in a video game project (with Boost.Asio). I read 'Developement and
+    Deployment of Multiplayer Online Games, Vol.1', which talks about architecture choices, common practices
+    for serialization, data representation and security policies for multiplayer games.
     </p>
 
     <div>
@@ -96,19 +94,18 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <p class="padded hidden" id="skills_4_text">
-    J'ai lu plusieurs livres traitant de l'expérience de jeu (notamment 'The Art of Game Design'), et je suis
-    plusieurs sources d'information sur le game design : Game Developement Conferences, reddit/r/gamedesign,
-    Merlan Frit, ... J'ai également créé des niveaux sur des jeux avec éditeurs que j'ai partagé sur Internet
-    (Warcraft 3, Trackmania, Little Big Planet), et écrit un guide pour une classe de World of Warcraft,
-    approuvé sur le forum officiel. J'ai écrit et dessiné des univers destinés à être explorés (pour des jeux
-    de rôle notamment).
+    I read a few books about game experience (in particular 'The Art of Game Design'), and I follow contents
+    about game design : Game Developement Conferences, reddit/r/gamedesign, Merlan Frit, ... I also created
+    levels on games with included editors which I shared on Internet (Warcraft 3, Trackmania and Little Big
+    Planet), and wrote a guide for a World of Warcraft's class, which have been approved on the official
+    (french) forum. I wrote and draw universes, including for roleplay games.
     </p>
 
     <div>
         <span class="icon ion-ios-star"></span>
         <span class="icon ion-ios-star-outline"></span>
         <span class="icon ion-ios-star-outline"></span>
-        <h2>Programmation fonctionnelle</h2>
+        <h2>Functionnal programming</h2>
     </div>
     <button onclick="toggleVisibility('skills_5_text', 'skills_5_btn_1', 'skills_5_btn_2')" id="skills_5_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -117,9 +114,9 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <p class="padded hidden" id="skills_5_text">
-    J'ai appris la programmation en CPGE avec OCaml. J'ai aussi légèrement pratiqué F#, et appris plus tard
-    les bénéfices et certains patterns de langages fonctionnels, que j'ai pu tester et implémenter en partie
-    en C++.
+    I learned programmation with OCaml in CPGE (a french school before engineer's school). I also did a
+    little of F#, and learned later benefits of functional patterns and principles, which I tried (and,
+    for some of them, implemented) in C++.
     </p>
 
     <div>
@@ -128,14 +125,14 @@
         <span class="invisible icon ion-ios-star"></span>
         <span class="invisible icon ion-ios-star"></span>
         <span class="invisible icon ion-ios-star"></span>
-        <h2>Autre</h2>
+        <h2>Other</h2>
     </div>
     <ul>
-        <li>Algorithmes et structures de données</li>
-        <li>Programmation graphique (OpenGL 3+)</li>
+        <li>Data structures and algorithms</li>
+        <li>Graphic programming (OpenGL 3+)</li>
         <li>JavaScript ES6, NodeJS</li>
-        <li>Techniques de forage de données</li>
-        <li>Programmation orientée objet</li>
+        <li>Data mining algorithms</li>
+        <li>Object-oriented programming</li>
     </ul>
 
 </div>
