@@ -1,4 +1,6 @@
 
+/* Resources */
+
 @font-face {
     font-family: Lato-Regular;
     src: url('resources/fonts/Lato-Regular.ttf'); 
@@ -16,6 +18,7 @@
     src: url('resources/fonts/Lato-Black.ttf'); 
 }
 
+/* Variables */
 
 :root {
     --watermelon: #ff6a5c;
@@ -24,6 +27,8 @@
     --cyandark: #056571;
 }
 
+/* General */
+
 body {
     color: var(--black);
     font-family: Lato-Regular;
@@ -31,6 +36,9 @@ body {
     text-align: justify;
 }
 h1 {
+    text-align: center;
+}
+h3 {
     text-align: center;
 }
 button {
@@ -63,6 +71,8 @@ a {
     min-width: 500px;
     max-width: 1000px;
 }
+
+/* Menu (common to all pages) */
 
 #menu {
     display: block;
@@ -102,6 +112,8 @@ a {
     width: 300px;
     color: var(--cyandark);
 }
+
+/* Welcome */
 
 #index {
     text-align: center;
@@ -146,6 +158,8 @@ a {
     font-size: 210%;
 }
 
+/* Skills */
+
 #skills div {
     display: block;
     float: none;
@@ -159,6 +173,8 @@ a {
     font-size: 120%;
 }
 
+/* Portfolio */
+
 #portfolio h2 {
     display: block;
     margin-left: 3em;
@@ -167,25 +183,13 @@ a {
     margin-left: 1em;
 }
 
-div#images {
-	width: 60%;
-    float: right;
-    margin: 1%;
+/* Images */
+
+.images {
     text-align: center;
 }
-
-div#dessins {
-    position: relative;
-    display: table;
-	width: 100%;
+.images img {
     margin: 1%;
-    text-align: center;
-}
-
-#images img {
+    display: inline-block;
     width: 45%;
-}
-
-#dessins img {
-    width: 24%;
 }
