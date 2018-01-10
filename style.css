@@ -130,7 +130,7 @@ a {
     padding-left: 5%;
     color: var(--greenlight);
     font-family: Lato-Black;
-    font-size: 1000%;
+    font-size: 10vw;
 }
 #index #resume {
     display: inline-block;
