@@ -30,12 +30,19 @@
     deux (sur un même clavier) où il faut résister à des vagues d'ennemis. Des powerups permettent
     d'améliorer les statistiques des héros des joueurs et de développer de nouvelles compétences :
     projectiles puissants, utilisations en mouvement, invincibilité, sorts de contrôle, ...
+    Une partie peut être sauvegardée, ce qui conserve l'état du jeu au début du dernier niveau.
     </p>
     <p>
-    Tentacle Slicers cumule plus de 8000 lignes de code en C#. Il ne se base sur aucun moteur de jeu : j'ai
-    donc notemment créé l'architecture du moteur, les collisions (formes 2d simples et lignes de vue), le
-    système d'animations, l'analyseur de fichier pour créer des niveaux, l'intelligence articifielle (avec
-    pathfinding) et tous les assets graphiques du jeu (images, animations, effets, terrains).
+    Tentacle Slicers cumule plus de 8000 lignes de code/commentaire en C#. Il ne se base sur aucun moteur de
+    jeu : j'ai donc notemment créé l'architecture du moteur, les collisions (formes 2d simples et lignes de
+    vue, partitionnement du monde), le système d'animations, l'analyseur de fichier pour créer et recharger
+    des niveaux, l'intelligence articifielle (avec pathfinding) et tous les assets graphiques du jeu (images,
+    animations, effets, terrains).
+    </p>
+    <p>
+    Il s'agit d'un projet sur lequel j'ai passé beaucoup de temps et qui m'a appris beaucoup de choses. J'en
+    suis assez satisfait (malgré quelques bugs restants) et il m'a donné goût aux problèmes d'organisation du
+    code et aux moteurs de jeu.
     </p>
     <p>
     <a href="https://github.com/Dwarfobserver/TentacleSlicers">Voici le code source du jeu</a>. GitHub n'a
@@ -49,8 +56,10 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <div class="images hidden" id="port_1_img">
-        <img src="resources/captures/ts-menu.png" alt="Tentacle Slicers Menu">
-        <img src="resources/captures/ts-boss.png" alt="Tentacle Slicers Boss">
+        <img src="resources/captures/ts-menu.png" alt="Tentacle Slicers menu">
+        <img src="resources/captures/ts-saves.png" alt="Tentacle Slicers saves">
+        <img src="resources/captures/ts-forest.png" alt="Tentacle Slicers forest (at start)">
+        <img src="resources/captures/ts-boss.png" alt="Tentacle Slicers boss">
     </div>
 
     <h2>Car Crash Boom !!! Yeah !</h2>
