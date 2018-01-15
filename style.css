@@ -3,19 +3,19 @@
 
 @font-face {
     font-family: Lato-Regular;
-    src: url('resources/fonts/Lato-Regular.ttf'); 
+    src: url('resources/fonts/LatoLatin-Regular.ttf'); 
 }
 @font-face {
     font-family: Lato-Semibold;
-    src: url('resources/fonts/Lato-Semibold.ttf'); 
+    src: url('resources/fonts/LatoLatin-Semibold.ttf'); 
 }
 @font-face {
     font-family: Lato-Heavy;
-    src: url('resources/fonts/Lato-Heavy.ttf'); 
+    src: url('resources/fonts/LatoLatin-Heavy.ttf'); 
 }
 @font-face {
     font-family: Lato-Black;
-    src: url('resources/fonts/Lato-Black.ttf'); 
+    src: url('resources/fonts/LatoLatin-Black.ttf'); 
 }
 
 /* Variables */
