@@ -24,12 +24,14 @@
 <div class="content" id="portfolio">
     
     <h1>My portfolio</h1>
+
     <h2>Tentacle Slicers</h2>
     <p>
-    One year ago, I created Tentacle Slicers in pair, a 2D top-down game playable alone or with a friend (on
-    the same keyboard) where you must survive against multiples ennemies. Powerups boost you character and
-    give him new abilities : powerful projectiles, attacking while moving, invincibiliy, disable ennemies,
-    ... One can save his progress in-game, which will keep the game's state at the last level beginning.
+    One year ago, for a Polytech's project (without theme imposed), I created Tentacle Slicers in pair, a 2D
+    top-down game playable alone or with a friend (on the same keyboard) where you must survive against
+    multiples ennemies. Powerups boost you character and give him new abilities : powerful projectiles,
+    attacking while moving, invincibiliy, disable ennemies, ... One can save his progress in-game, which will
+    keep the game's state at the last level beginning.
     </p>
     <p>
     Tentacle Slicers has more than 8000 lines of code in C#. He is not based on any game engine. I created
@@ -57,15 +59,33 @@
         <img src="resources/captures/ts-boss.png" alt="Tentacle Slicers boss">
     </div>
 
-    <h2>Car Crash Boom !!! Yeah !</h2>
+    <h2>cpp-sandbox</h2>
+
     <p>
-    In a school course about video game conception, we were four to make 'Car Crash Boom ! Yeah !!!' alive,
-    a local multiplayer racing game developped on Unity where duos are fighting each other to finish first.
-    We have three fighting races and two cooperation races for one final map.
+    <a href="https://github.com/Dwarfobserver/cpp-sandbox">cpp-sandbox is the github repositary where I
+    experiment some concepts in C++.</a> My goal is to develop reusable and generic code. This allow me to
+    improve my C++ skills, propose better interfaces, learn good habits, and have in the long term tested
+    code which I can use again.
     </p>
     <p>
-    In particular, I created a generic input system and a playable fighting race (on a beach). I also look
-    how to do the lightning and the link between differents races for a single map.
+    This repository is regularly updated. All its content is covered by tests which can be used as a little
+    documentation. It contains among other things data structures (some with lock-free algorithms) and
+    concepts from functional programming (monads and utilitaries for functions). I think it's the project
+    from which I learned the most (at least, about programming).
+    </p>
+
+    <p>
+    <a href="https://github.com/Dwarfobserver/cpp-sandbox">cpp-sandbox est le dépôt github où j'expérimente
+    différents concepts en C++.</a> Mon but est de créer des fonctionnalités et structures réutilisables, et
+    si possible assez génériques. Cela me permet de développer mes compétences en C++, de proposer de
+    meilleures interfaces, d'aquérir de bonnes habitudes, et d'avoir à terme une collection de code vérifié
+    que je pourrai utiliser à nouveau.
+    </p>
+    <p>
+    Ce dépôt est régulièrement mis à jour. Tout son contenu est testé, ce qui peut servir de petite
+    documentation. Il contient notamment des structures (certaines implémentant des algorithmes lock-free) et
+    de la programmation fonctionnelle (monades et autres utilitaires pour des fonctions). Il s'agit du projet
+    sur lequel je pense avoir appris le plus de choses.
     </p>
     <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" id="port_2_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -74,18 +94,19 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <div class="images hidden" id="port_2_img">
-        <img src="resources/captures/cars.png" alt="CCBY Cars">
-        <img src="resources/captures/beach.png" alt="CCBY Beach">
+        <img src="resources/captures/cpp-monad.png" alt="cpp-sandbox monad">
+        <img src="resources/captures/cpp-make_string.png" alt="cpp-sandbox make_string">
     </div>
-    
-    <h2>T-Arena</h2>
+
+    <h2>Car Crash Boom !!! Yeah !</h2>
     <p>
-    I participate at a Game Jam where our team of six persons developped 'T-Arena', a 2D top-down game for
-    two persons playing in turns : two teams of hero must fight on a tiled map.
+    In a UQAC's course about video game conception, we were four to make 'Car Crash Boom ! Yeah !!!' alive,
+    a local multiplayer racing game developped on Unity where duos are fighting each other to finish first.
+    We have three fighting races and two cooperation races for one final map.
     </p>
     <p>
-    I created the game sounds, the main loop logic and the input handling (for keyboards and gamepads),
-    with in particular an algorithm to select cases where we want to move or attack.
+    In particular, I created a generic input system and a playable fighting race (on a beach). I also look
+    how to do the lightning and the link between differents races for a single map.
     </p>
     <button onclick="toggleVisibility('port_3_img', 'port_3_btn_1', 'port_3_btn_2')" id="port_3_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
@@ -94,6 +115,27 @@
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
     <div class="images hidden" id="port_3_img">
+        <img src="resources/captures/cars.png" alt="CCBY Cars">
+        <img src="resources/captures/beach.png" alt="CCBY Beach">
+    </div>
+    
+    <h2>T-Arena</h2>
+    <p>
+    Just after my arrival in the Quebec, I participate at a Game Jam where our team of six persons developped
+    'T-Arena', a 2D top-down game for two persons playing in turns : two teams of hero must fight on a tiled
+    map.
+    </p>
+    <p>
+    I created the game sounds, the main loop logic and the input handling (for keyboards and gamepads),
+    with in particular an algorithm to select cases where we want to move or attack.
+    </p>
+    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" id="port_4_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" class="hidden" id="port_4_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_4_img">
         <img src="resources/captures/arena-map.png" alt="T-Arena Map">
         <img src="resources/captures/arena-ranges.PNG" alt="T-Arena Attacks and Moves">
     </div>
