@@ -25,6 +25,38 @@
     
     <h1>Mon portfolio</h1>
 
+    <h2>Aggregates To Tuples</h2>
+    <p>
+    Il s'agit d'un projet personnel complété au début du mois d'avril. Il s'agit d'
+    <a href="https://github.com/Dwarfobserver/AggregatesToTuples">une librarie en C++17 permettant d'utiliser
+    des structures comme des tuples</a> : cela permet de trier, comparer, sérialiser ou encore obtenir le
+    hash de structures automatiquement.
+    </p>
+    <p>
+    La librarie est cross-platform et est testée. En plus du code source de la librairie, j'ai un programme
+    qui génère automatiquement du code, et un autre qui rassemble les différents fichiers pour simplifier
+    l'utilisation de la librairie. J'ai également mis en place une chaîne d'intégration continue qui va, à
+    chaque modification de la librairie en ligne, exécuter les programmes générateurs de code, compiler les
+    tests puis les exéucter, puis indiquer si tout le processus s'est bien déroulé. Ces vérifications
+    automatiques se déroulent sur Linux et Windows.
+    </p>
+    <p>
+    Ce projet récent m'a permis d'expérimenter des particularités techniques intéressantes en C++ et de gérer
+    un environnement de développement avec des tests unitaires et une chaîne d'intégration continue. De plus,
+    j'ai gagné beaucoup d'expérience en partageant cette librairie et en recevant les retours de personnes
+    bienveillantes (sur Reddit et Slack).
+    </p>
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" id="port_1_btn_1">
+        <span class="padded icon ion-android-arrow-dropright-circle"></span>
+    </button>
+    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" class="hidden" id="port_1_btn_2">
+        <span class="padded icon ion-android-arrow-dropleft-circle"></span>
+    </button>
+    <div class="images hidden" id="port_1_img">
+        <img src="resources/captures/att-usage.png" alt="Libray loop usage">
+        <img src="resources/captures/att-implementation.png" alt="Libray loop implementation sample">
+    </div>
+
     <h2>Tentacle Slicers</h2>
     <p>
     Il y a un an, dans le cadre d'un projet libre lors de ma seconde année à Polytech', j'ai développé
@@ -49,13 +81,13 @@
     projet final. <a href="https://www.youtube.com/watch?v=v7-tyT7pgmQ">Un Youtuber a accepté de tester notre
     jeu :)</a>
     </p>
-    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" id="port_1_btn_1">
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" id="port_2_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
     </button>
-    <button onclick="toggleVisibility('port_1_img', 'port_1_btn_1', 'port_1_btn_2')" class="hidden" id="port_1_btn_2">
+    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" class="hidden" id="port_2_btn_2">
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
-    <div class="images hidden" id="port_1_img">
+    <div class="images hidden" id="port_2_img">
         <img src="resources/captures/ts-menu.png" alt="Tentacle Slicers menu">
         <img src="resources/captures/ts-saves.png" alt="Tentacle Slicers saves">
         <img src="resources/captures/ts-forest.png" alt="Tentacle Slicers forest (at start)">
@@ -71,18 +103,18 @@
     que je pourrai utiliser à nouveau.
     </p>
     <p>
-    Ce dépôt est régulièrement mis à jour. Tout son contenu est testé, ce qui peut servir de petite
+    Ce dépôt a longtemps été mis à jour. Tout son contenu est testé, ce qui peut servir de petite
     documentation. Il contient notamment des structures (certaines implémentant des algorithmes lock-free) et
     de la programmation fonctionnelle (monades et autres utilitaires pour des fonctions). Il s'agit du projet
     sur lequel je pense avoir appris le plus de choses (du moins pour la programmation).
     </p>
-    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" id="port_2_btn_1">
+    <button onclick="toggleVisibility('port_3_img', 'port_3_btn_1', 'port_3_btn_2')" id="port_3_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
     </button>
-    <button onclick="toggleVisibility('port_2_img', 'port_2_btn_1', 'port_2_btn_2')" class="hidden" id="port_2_btn_2">
+    <button onclick="toggleVisibility('port_3_img', 'port_3_btn_1', 'port_3_btn_2')" class="hidden" id="port_3_btn_2">
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
-    <div class="images hidden" id="port_2_img">
+    <div class="images hidden" id="port_3_img">
         <img src="resources/captures/cpp-monad.png" alt="cpp-sandbox monad">
         <img src="resources/captures/cpp-serializer_span.png" alt="cpp-sandbox serializer_span">
     </div>
@@ -99,13 +131,13 @@
     combat. J'ai également recherché comment faire l'éclairage et la jonction entre les différentes scènes
     d'un circuit.
     </p>
-    <button onclick="toggleVisibility('port_3_img', 'port_3_btn_1', 'port_3_btn_2')" id="port_3_btn_1">
+    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" id="port_4_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
     </button>
-    <button onclick="toggleVisibility('port_3_img', 'port_3_btn_1', 'port_3_btn_2')" class="hidden" id="port_3_btn_2">
+    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" class="hidden" id="port_4_btn_2">
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
-    <div class="images hidden" id="port_3_img">
+    <div class="images hidden" id="port_4_img">
         <img src="resources/captures/cars.png" alt="CCBY Cars">
         <img src="resources/captures/beach.png" alt="CCBY Beach">
     </div>
@@ -120,13 +152,13 @@
     J'ai créé les sons du jeu, la boucle de jeu principale et la gestion des inputs, avec notamment un
     algorithme de sélection des PNJ et des cases où attaquer ou se déplacer (au clavier et à la manette).
     </p>
-    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" id="port_4_btn_1">
+    <button onclick="toggleVisibility('port_5_img', 'port_5_btn_1', 'port_5_btn_2')" id="port_5_btn_1">
         <span class="padded icon ion-android-arrow-dropright-circle"></span>
     </button>
-    <button onclick="toggleVisibility('port_4_img', 'port_4_btn_1', 'port_4_btn_2')" class="hidden" id="port_4_btn_2">
+    <button onclick="toggleVisibility('port_5_img', 'port_5_btn_1', 'port_5_btn_2')" class="hidden" id="port_5_btn_2">
         <span class="padded icon ion-android-arrow-dropleft-circle"></span>
     </button>
-    <div class="images hidden" id="port_4_img">
+    <div class="images hidden" id="port_5_img">
         <img src="resources/captures/arena-map.png" alt="T-Arena Map">
         <img src="resources/captures/arena-ranges.PNG" alt="T-Arena Attacks and Moves">
     </div>
