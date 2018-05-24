@@ -149,6 +149,10 @@ a {
     font-size: 160%;
     line-height: 100%;
 }
+#index #cv {
+    padding-left: 1em;
+    font-size: 160%;
+}
 #index #github {
     padding-left: 1em;
     font-size: 200%;
