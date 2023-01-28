@@ -1,51 +1,52 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sidney Congard Website</title>
+    <title>Sidney Congard's website</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
 
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
 </head>
 
 <body>
 
-<div id="menu">
-    <div id="top_bar"></div>
-    <a href="resources/CV.pdf"><div class="clickable_link menu_link">CV</div></a>
-    <div class="current_link menu_link">Accueil</div>
-    <a href="skills.html"><div class="clickable_link menu_link">Compétences</div></a>
-    <a href="portfolio.html"><div class="clickable_link menu_link">Portfolio</div></a>
-    <a href="about.html"><div class="clickable_link menu_link">À propos</div></a>
-    <a href="index-en.html"><div class="language_link menu_link">In english please !</div></a>
+<div class="content" id="about">
+
+    <h1>Sidney Congard's website</h1>
+    <p>
+    Hello ! I'm from Alsace, in France. I did a computer science school at Marseille & Québec then worked 3 years at Paris. I went back to study mathematical logic in the LMFI, and I'm now looking for a thesis, preferably about semantics of linear logic.
+    </p>
+    <p>You can contact me at "sidney DOT congard AT gmail DOT com", or at one of these websites :
+        <p class="icons">
+            <a href="https://github.com/Dwarfobserver">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://twitter.com/Dwarfobserver">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://mathstodon.xyz/@dwarfobserver">
+                <ion-icon name="logo-mastodon"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/sidney-congard-31081710b/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </p>
+    </p>
+    <div class="images">
+        <img src="assets/me_and_mojito.png" alt="Me and Mojito">
+    </div>
+    <h2>The attic</h2>
+    <p>Some <a href="assets/Transcendental_syntax.pdf">slides</a> I made for an informal talk to introduce and motivate Jean-Yves Girard's transcendental syntax.</p>
+    <p><a href="assets/Internship_Rust.pdf">French slides (in French)</a> presenting my work at my internship in Prosecco on Aeneas, a framework to translate safe Rust programs in proof assistants.</p>
+    <p>A <a href="https://github.com/Dwarfobserver/CategorySandbox">category theory project</a> for the Coq course at the LMFI, made with a classmate.</p>
+    <p>The <a href=https://cours-cpp.gitbook.io/resources>C++ course (in French)</a> I made for classmates at Québec.</p>
+    <p>A <a href="https://www.youtube.com/watch?v=59V8I9u8tZs">talk (in French)</a> I gave about the ways copies can happen instead of moves in C++, with <a href="assets/CPP_copies.pdf">its slides (in english)</a>.</p>
+    <p>A <a href="https://github.com/Dwarfobserver/soa_vector">C++ project</a> for a small data-structure on which I gave <a href="https://www.youtube.com/watch?v=RJXmGnxSHPw">a talk</a> and wrote two <a href="https://www.fluentcpp.com/2018/12/18/the-soa-vector-part-1-optimizing-the-traversal-of-a-collection/">small</a> <a href="https://www.fluentcpp.com/2018/12/21/an-soa-vector-with-an-stl-container-interface-in-cpp/">posts</a>.</p>
 </div>
 
-<div id="index">
-    <div class="pres-block">
-        <div class="title">Sidney</div>
-        <div class="title">Congard</div>
-    </div>
-    <div class="pres-block">
-        <div id="resume">
-        Etudiant attiré par la conception de jeux vidéo et les problèmes de
-        performance, de concurrence et d'architecture en programmation.
-        </div>
-    </div>
-    <div id="contact">
-        <span id="email">sidney.congard@gmail.com</span>
-        <a href="https://github.com/Dwarfobserver">
-            <span id="github" class="ion-social-github"/>
-        </a>
-        <a href="https://www.linkedin.com/in/sidney-congard-31081710b/">
-            <span id="linkedin" class="ion-social-linkedin"/>
-        </a>
-    </div>
-</div>
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
-<script>init();</script>
 
 </html>

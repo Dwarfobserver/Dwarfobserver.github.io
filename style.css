@@ -1,67 +1,30 @@
 
-/* Resources */
+/* Fonts */
 
 @font-face {
     font-family: Lato-Regular;
-    src: url('resources/fonts/LatoLatin-Regular.ttf'); 
-}
-@font-face {
-    font-family: Lato-Semibold;
-    src: url('resources/fonts/LatoLatin-Semibold.ttf'); 
-}
-@font-face {
-    font-family: Lato-Heavy;
-    src: url('resources/fonts/LatoLatin-Heavy.ttf'); 
-}
-@font-face {
-    font-family: Lato-Black;
-    src: url('resources/fonts/LatoLatin-Black.ttf'); 
+    src: url('assets/fonts/LatoLatin-Regular.ttf'); 
 }
 
-/* Variables */
+/* Colors */
 
 :root {
-    --watermelon: #ff6a5c;
-    --greenlight: #ccdfcb;
-    --black: #414141;
-    --cyandark: #056571;
+    --watermelon: #ff7b6d;
+    --text: #dadada;
+    --background: #252525;
 }
 
-/* General */
+/* Text */
 
-body {
-    color: var(--black);
-    font-family: Lato-Regular;
-    font-size: 110%;
-    text-align: justify;
-}
 h1 {
     text-align: center;
 }
-h3 {
-    text-align: center;
-}
-button {
-    color: var(--watermelon);
-    background-color: white;
-    display: inline;
-    border: none;
-    cursor: pointer;
-    font-size: 120%;
-}
-a {
-    color: var(--watermelon);
-    font-family: Lato-Semibold;
-    text-decoration: none;
-}
-.icon {
-    font-size: 150%;
-}
-.padded {
-    padding-left: 1em;
-}
-.invisible {
-    visibility: hidden;
+body {
+    color: var(--text);
+    background-color: var(--background);
+    font-family: Lato-Regular;
+    font-size: 110%;
+    text-align: justify;
 }
 .content {
     margin-left: auto;
@@ -72,122 +35,7 @@ a {
     max-width: 1000px;
 }
 
-/* Menu (common to all pages) */
-
-#menu {
-    display: block;
-    float: none;
-    clear: both;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    text-align:center;
-}
-#menu #top_bar {
-    width: 100%;
-    height: 1px;
-}
-#menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-#menu .menu_link {
-    display: inline-block;
-    width: 200px;
-    height: 65px;
-    line-height: 65px;
-    margin-right: 1em;
-    text-align: center;
-    font-size: 140%;
-    font-family: Lato-Heavy;
-    color: var(--watermelon);
-}
-#menu .current_link {
-    border: 4px solid var(--watermelon);
-    border-radius: 2px;
-}
-#menu .clickable_link {
-    border: 4px solid white;
-}
-#menu .language_link {
-    width: 300px;
-    color: var(--cyandark);
-}
-
-/* Welcome */
-
-#index {
-    text-align: center;
-}
-#index .pres-block {
-    display: inline-block;
-    text-align: justify;
-    margin: 2%;
-    width: 40%;
-    height: 40%;
-}
-#index .title {
-    display: block;
-    padding-left: 5%;
-    color: var(--greenlight);
-    font-family: Lato-Black;
-    font-size: 10vw;
-}
-#index #resume {
-    display: inline-block;
-    max-width: 400px;
-    font-size: 140%;
-    color: var(--black);
-    margin-left: 10%;
-}
-#index #contact {
-    display: inline-block;
-    margin-top: 10%;
-    margin-left: 5%;
-    line-height: 100%;
-}
-#index #email {
-    font-size: 160%;
-    line-height: 100%;
-}
-#index #cv {
-    padding-left: 1em;
-    font-size: 160%;
-}
-#index #github {
-    padding-left: 1em;
-    font-size: 200%;
-}
-#index #linkedin {
-    padding-left: 1em;
-    font-size: 210%;
-}
-
-/* Skills */
-
-#skills div {
-    display: block;
-    float: none;
-    clear: both;
-}
-#skills h2 {
-    display: inline;
-    margin-left: 1em;
-}
-#skills li {
-    font-size: 120%;
-}
-
-/* Portfolio */
-
-#portfolio h2 {
-    display: block;
-    margin-left: 3em;
-}
-#portfolio p {
-    margin-left: 1em;
-}
-
-/* Images */
+/* Misc */
 
 .images {
     text-align: center;
@@ -196,4 +44,12 @@ a {
     margin: 0.5%;
     display: inline-block;
     width: 48%;
+}
+.icons {
+    text-align: center;
+    font-size: 150%;
+}
+a {
+    color: var(--watermelon);
+    text-decoration: none;
 }
